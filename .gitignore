@@ -1,0 +1,9 @@
+.quarto/
+_site/
+_book/
+*_files/
+.DS_Store
+example/public/
+example/*.pdf
+example/*.docx
+example/*.html

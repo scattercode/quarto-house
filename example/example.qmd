@@ -1,0 +1,41 @@
+---
+title: "House style example"
+subtitle: "One page that exercises every house format"
+author: "Stephen Masters"
+date: today
+format:
+  house-html: default
+  house-pdf: default
+  house-docx: default
+---
+
+# 1. Why this page exists {#sec-why}
+
+This document renders to HTML, PDF and Word with the `house-*` formats. The
+manual number in the heading above is stripped by the build, so the rendered
+heading is numbered by Quarto. A reference to @sec-tables shows that
+cross-references resolve.
+
+## 1.1 Links
+
+A [web link](https://quarto.org) is always kept. A relative link to
+[another Markdown file](other.md) becomes plain text in the PDF and Word
+output, because that file is not part of this document.
+
+# 2. Tables and callouts {#sec-tables}
+
+| Environment | Workspaces                 | Purpose              |
+|-------------|----------------------------|----------------------|
+| dev         | sandbox, staging, live     | Build and try things |
+| ppr         | sandbox, staging, live     | Rehearse releases    |
+| prd         | sandbox, staging, live     | Serve the business   |
+
+: An environment contains three workspaces {#tbl-environments}
+
+::: {.callout-warning}
+Amber marks cautions and human decisions in the house palette.
+:::
+
+```python
+print("code blocks sit on a cream background")
+```
