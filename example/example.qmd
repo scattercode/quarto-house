@@ -22,6 +22,15 @@ A [web link](https://quarto.org) is always kept. A relative link to
 [another Markdown file](other.md) becomes plain text in the PDF and Word
 output, because that file is not part of this document.
 
+## 1.2 Armenian script {#sec-armenian}
+
+Armenian text renders in the PDF in Noto Serif Armenian, beside the Latin:
+Հովհաննես Թումանյան, *Քաջ Նազար*, and **Երևան** or **Երեւան** in the two
+orthographies. Inside sans-serif text, such as the headings, it switches to
+Noto Sans Armenian instead.
+
+### 1.2.1 Երևան in a heading
+
 # 2. Tables and callouts {#sec-tables}
 
 | Environment | Workspaces                 | Purpose              |
@@ -29,6 +38,7 @@ output, because that file is not part of this document.
 | dev         | sandbox, staging, live     | Build and try things |
 | ppr         | sandbox, staging, live     | Rehearse releases    |
 | prd         | sandbox, staging, live     | Serve the business   |
+| Երևան       | Armenian in a table cell   | Fallback in tables   |
 
 : An environment contains three workspaces {#tbl-environments}
 
