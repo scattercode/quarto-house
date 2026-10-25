@@ -23,3 +23,7 @@ h4, h5, h6 { color: $house-ink; }
 .callout-warning, .callout-caution { border-left-color: $house-amber; }
 .sidebar nav[role="doc-toc"] a.active { color: $house-deep-teal; }
 figure img { background: $house-cream; }
+// A table cell holding a long path or identifier in code may break it
+// anywhere, rather than hold its width and push the table over the margin
+// into the page's own navigation (seen in Safari on a four-column table).
+table code { overflow-wrap: anywhere; }
